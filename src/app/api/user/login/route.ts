@@ -5,7 +5,6 @@ import { read } from "fs";
 
 //POST /api/user/login
 export const POST = async (request: NextRequest) => {
-  readDB
   const body = await request.json();
   const { username, password } = body;
 
